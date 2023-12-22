@@ -29,7 +29,7 @@ export const MovieDetail = () => {
         </div>
         <div className="max-w-2xl text-gray-700 text-lg dark:text-white">
           <h1 className="text-4xl font-bold my-3 text-center lg:text-left">{movie.title}</h1>
-          <p className="my-4">{movie.overview}</p>
+          <p className="my-4 text-left">{movie.overview}</p>
             { movie.genres ? (
               <p className="my-7 flex flex-wrap gap-2">
               { movie.genres.map((genre) => (
@@ -45,27 +45,27 @@ export const MovieDetail = () => {
               <span className="text-gray-900 dark:text-white">{movie.vote_count} reviews</span>
           </div>
 
-          <p className="my-4">
+          <p className="my-4 text-left">
             <span className="mr-2 font-bold">Runtime:</span>
             <span>{movie.runtime} min.</span>
           </p>
 
-          <p className="my-4">
+          <p className="my-4 text-left">
             <span className="mr-2 font-bold">Budget:</span>
             <span>{movie.budget}</span>
           </p>
 
-          <p className="my-4">
+          <p className="my-4 text-left">
             <span className="mr-2 font-bold">Revenue:</span>
             <span>{movie.revenue}</span>
           </p>
 
-          <p className="my-4">
+          <p className="my-4 text-left">
             <span className="mr-2 font-bold">Release Date:</span>
             <span>{movie.release_date}</span>
           </p>
 
-          <p className="my-4">
+          <p className="my-4 text-left">
             <span className="mr-2 font-bold">IMDB Code:</span>
             <a href={`https://www.imdb.com/title/${movie.imdb_id}`} target="_blank" rel="noreferrer">{movie.imdb_id}</a>
           </p>
